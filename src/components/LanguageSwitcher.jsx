@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
       key={refreshKey}
       defaultValue={
         languageOptions.find((option) => option.value === i18n.language) ||
-        languageOptions[0]
+        languageOptions[1]
       }
       onChange={handleChange}
       classNames={{
