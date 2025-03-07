@@ -33,21 +33,10 @@ function App() {
       unsubscribe();
     };
   }, []);
-
   useEffect(() => {
-    const handleDirection = () => {
-      const currentLang = i18next.language;
-      const direction = currentLang === 'ar' ? 'rtl' : 'ltr';
-      document.documentElement.dir = direction;
-    };
-
-    handleDirection();
-    i18next.on('languageChanged', handleDirection);
-
-    return () => {
-      i18next.off('languageChanged', handleDirection);
-    };
+    document.documentElement.setAttribute('dir', 'rtl');
   }, []);
+
   return <RouterProvider router={router} />;
 }
 
