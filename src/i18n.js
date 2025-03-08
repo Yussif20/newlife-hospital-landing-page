@@ -1,7 +1,6 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { heroSliderDataEn,heroSliderDataAr,heroSliderDataEs} from "./data";
 
 const optionsEn = [
   { value: 'en', label: 'English' },
@@ -146,7 +145,6 @@ i18next
         title:"Up to 10%",
         titleSecondLine:" off Voucher",
         button:"Shop Now",
-        data:heroSliderDataEn,
       },
       sections: {
         flashSales: {
@@ -438,7 +436,7 @@ i18next
         title:"تخفيضات على القسم الفرعي",
         titleSecondLine:"10% حتى",
         button:"تسوق الآن",
-        data:heroSliderDataAr,
+        
       },
       sections: {
         flashSales: {
@@ -727,7 +725,6 @@ i18next
         title:"Hasta 50% de descuento!",
         titleSecondLine:"en la oferta especial",
         button:"Comprar ahora",
-        data:heroSliderDataEs,
       },
       sections: {
         flashSales: {

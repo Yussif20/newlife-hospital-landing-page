@@ -1,10 +1,37 @@
-import laptopImage from '../assets/services/laptop.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { servicesSliderData } from '../data';
 
 const Services = () => {
   return (
     <div className="bg-white w-4/6 mx-auto flex items-center justify-center gap-8 p-8">
       <div className="flex-1">
-        <img className="max-w-full" src={laptopImage} alt="laptop" />
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          allowTouchMove={true}
+          dir={'rtl'}
+          key={'rtl'}
+          className="w-[400px]"
+        >
+          {servicesSliderData.map((image, index) => (
+            <SwiperSlide key={index}>
+              <div>
+                <img
+                  className="w-full h-full object-cover"
+                  src={image.image}
+                  alt="service"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="flex-1 px-4 text-[##212529] text-base leading-6">
         <h4 className="text-[#008EB9] text-xl font-medium pb-4">

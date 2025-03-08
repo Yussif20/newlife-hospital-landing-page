@@ -2,13 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useTranslation } from 'react-i18next';
+
+import { heroSliderData } from '../data';
 
 const HeroSlider = () => {
-  const { t } = useTranslation();
-
-  const heroData = t('hero.data', { returnObjects: true });
-
   return (
     <div className={`flex justify-center items-center rtl-class w-full `}>
       <Swiper
@@ -22,7 +19,7 @@ const HeroSlider = () => {
         key={'rtl'}
         className="w-screen"
       >
-        {heroData.map((hospital, index) => (
+        {heroSliderData.map((hospital, index) => (
           <SwiperSlide key={index}>
             <div className="relative">
               <img
