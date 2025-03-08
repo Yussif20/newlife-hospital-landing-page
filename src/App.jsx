@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage, Home, Layout } from '@pages';
 import { useEffect } from 'react';
 import { Region } from './pages/Region';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: '/error', element: <ErrorPage /> },
       { path: '/*', element: <ErrorPage /> },
       { path: '/region', element: <Region /> },
+      { path: '/about', element: <About /> },
     ],
   },
 ]);

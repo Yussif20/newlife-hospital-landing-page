@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 
 const Header = () => {
   return (
-    <header className="fixed z-10 bg-white font-cairo w-full border-b border-gray-300 py-2">
+    <header className="fixed z-50 bg-white font-cairo w-full border-b border-gray-300 py-2">
       <div className="flex items-center justify-end gap-12 px-4 sm:px-12 lg:px-20 py-2 bg-white text-sm">
         <div className="flex gap-4 text-blue-500 font-bold">
           <a href="tel:777999204" className="hover:underline">
