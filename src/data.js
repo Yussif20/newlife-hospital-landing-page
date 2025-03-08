@@ -30,3 +30,32 @@ export const servicesSliderData= [
 ];
 
 
+////////////////////////////////////////////
+
+import city1Image from './assets/region/city1.jpg'
+import city2Image from './assets/region/city2.jpg'
+import city3Image from './assets/region/city3.jpg'
+import city4Image from './assets/region/city4.jpg'
+
+export const cities = [
+  {
+    image: city1Image,
+    name: 'صنعاء',
+    title: 'زيارة و تصفح المستشفيات الخاصة بمدينة صنعاء',
+  },
+  {
+    image: city2Image,
+    name: 'عدن',
+    title: 'زيارة و تصفح المستشفيات الخاصة بمدينة عدن',
+  },
+  {
+    image: city3Image,
+    name: 'القاهرة',
+    title: 'زيارة و تصفح المستشفيات الخاصة بمدينة القاهرة',
+  },
+  {
+    image: city4Image,
+    name: 'القدس',
+    title: 'زيارة و تصفح المستشفيات الخاصة بمدينة القدس',
+  },
+];

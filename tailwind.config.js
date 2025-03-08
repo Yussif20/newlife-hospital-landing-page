@@ -28,6 +28,9 @@ export default {
         darkSecondary:"hsl(235, 24%, 19%)",
         lightSecondary:"#F5F5F5",
       },
+      backgroundImage:{
+        blueBg:"url(./src/assets/region/blue-bg.jpg)",
+      },
     
     },
   },

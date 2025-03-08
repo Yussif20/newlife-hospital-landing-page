@@ -8,7 +8,7 @@ export const Layout = () => {
     <>
       {/* <TopHeader /> */}
       <Header />
-      <main className="font-inter w-screen min-h-[72vh] bg-[#F5F8FF]">
+      <main className="font-inter w-screen min-h-[72vh] bg-[#F5F8FF] pt-36">
         <Outlet />
       </main>
       <Footer />
