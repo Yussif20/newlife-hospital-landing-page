@@ -4,11 +4,11 @@ import companyImage2 from '../assets/company/company2.jpg';
 const Companies = () => {
   return (
     <section className="w-4/5 py-20 mx-auto flex items-center justify-between gap-8">
-      <div className="flex-1">
-        <h3 className="text-[#1189a8] text-3xl border-b border-black pb-4">
+      <div className="flex-1 text-[#212529] text-base leading-6">
+        <h3 className="text-[#1189A8] text-[28px] leading-8 font-medium border-b border-black pb-4">
           شركة نيو لايف
         </h3>
-        <p className="my-4 leading-6 font-medium text-lg text-[#212529]">
+        <p className="my-4 text-[#212529]">
           شركة متخصصة تعمل في مجال تقديم الخدمات الطبية والرعاية الصحية للهيئات
           والشركات العامة والخاصة والنقابات والجمعيات التعاونية والخيرية
           والأفراد بجميع شرائح المجتمع لضمان وتوفير مستوى متميز من الخدمات
@@ -26,18 +26,18 @@ const Companies = () => {
           بأسعار معقولة.
         </p>
       </div>
-      <div className="flex-1">
-        <h3 className="text-[#1189a8] text-3xl border-b border-black pb-2">
+      <div className="flex-1 text-[#212529] text-base leading-6">
+        <h3 className="text-[#1189A8] text-[28px] leading-8 font-medium border-b border-black pb-4">
           برنامج نيولايف للرعاية الصحية
         </h3>
-        <p className="my-4 leading-6 font-medium text-lg text-[#212529]">
+        <p className="my-4">
           أقوى بطاقة علاج نقدي في الجمهورية اليمنية يقوم على فكرة الخصم النقدي
           المباشر بأفضل وأقل الأسعار (بنسب خصم تصل حتى 80%) في المجال الطبي
           للهيئات والشركات والأفراد في جميع التخصصات الطبية والعمليات الجراحية
           والتحاليل والأشعة والأدوية والنظارات وغيرها الكثير.
         </p>
-        <img className="w-full h-[300px]" src={companyImage2} alt="" />
-        <p className="my-4 leading-6 font-medium text-lg text-[#212529]">
+        <img className="w-full h-[300px]" src={companyImage2} alt="company" />
+        <p className="my-4">
           نصبو إلى التواصل مع أكبر عدد ممكن من الناس من كافة أرجاء الجمهورية
           اليمنية فنمكّنَ كلّ إنسان من النفاذ إلى شبكتنا وتبادل خبراتنا مع مرضى
           آخرين عبر منتدياتنا المتعدّدة. سوف نساعدهم أيضاً في العثور على

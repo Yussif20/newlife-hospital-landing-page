@@ -1,4 +1,3 @@
-export * from './Contact';
 export * from './ErrorPage';
 export * from './Home';
 export * from './Layout';

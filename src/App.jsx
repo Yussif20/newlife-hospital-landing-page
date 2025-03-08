@@ -1,9 +1,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Contact, ErrorPage, Home, Layout, SearchResult } from '@pages';
+import { ErrorPage, Home, Layout, SearchResult } from '@pages';
 import { useEffect } from 'react';
-import i18next from './i18n';
 
 const router = createBrowserRouter([
   {
@@ -12,8 +11,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-      { path: '/contact', element: <Contact /> },
-
       { path: '/search', element: <SearchResult /> },
       { path: '/error', element: <ErrorPage /> },
       { path: '*', element: <ErrorPage /> },
