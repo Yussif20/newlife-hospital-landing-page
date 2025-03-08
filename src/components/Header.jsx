@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 
 const Header = () => {
   return (
-    <header className="font-cairo w-full border-b border-gray-300 py-2 dark:bg-darkPrimary dark:text-white">
+    <header className="fixed z-10 bg-white font-cairo w-full border-b border-gray-300 py-2">
       <div className="flex items-center justify-end gap-12 px-4 sm:px-12 lg:px-20 py-2 bg-white text-sm">
         <div className="flex gap-4 text-blue-500 font-bold">
           <a href="tel:777999204" className="hover:underline">
@@ -15,7 +15,9 @@ const Header = () => {
             730000702
           </a>
         </div>
-        <button className="border-2 py-2 px-4">Login</button>
+        <button className="border-2 border-[#6C757D] hover:bg-[#6C757D] hover:text-white transition-all font-medium py-2 px-4">
+          Login
+        </button>
         <div className="flex items-center gap-4">
           <SearchBar />
         </div>
